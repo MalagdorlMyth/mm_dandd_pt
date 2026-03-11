@@ -4,5 +4,4 @@ function showTemplate(id, btn) {
     document.querySelectorAll('.template').forEach(t => t.classList.remove('active'));
     document.getElementById('tpl-' + id).classList.add('active');
     btn.classList.add('active');
-    console.log('nav??');
 }

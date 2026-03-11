@@ -7,7 +7,6 @@ class PageTemplates extends HTMLElement {
             if (this.isConnected) {
                 this.innerHTML = html;
             }
-            console.log('1??');
         } catch (err) {
             console.error('Помилка завантаження шаблону:', err);
             if (this.isConnected) {

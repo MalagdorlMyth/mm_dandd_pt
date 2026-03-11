@@ -3,7 +3,6 @@ class MyHeader extends HTMLElement {
         fetch('components/header.html')
             .then(r => r.text())
             .then(html => this.innerHTML = html);
-        console.log('2??');
     }
 }
 
@@ -12,7 +11,6 @@ class MyFooter extends HTMLElement {
         fetch('components/footer.html')
             .then(r => r.text())
             .then(html => this.innerHTML = html);
-        console.log('3??');
     }
 }
 
