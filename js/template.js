@@ -1,20 +1,21 @@
 class TemplateNav extends HTMLElement {
     connectedCallback() {
-        fetch('/components/template_nav.html')
+        fetch('components/template_nav.html')
             .then(r => r.text())
             .then(html => this.innerHTML = html);
+        console.log('TemplateNav??');
     }
 }
 class TemplateCity extends HTMLElement {
     connectedCallback() {
-        fetch('/components/template_city.html')
+        fetch('components/template_city.html')
             .then(r => r.text())
             .then(html => this.innerHTML = html);
     }
 }
 class TemplateCountry extends HTMLElement {
     connectedCallback() {
-        fetch('/components/template-country.html')
+        fetch('components/template-country.html')
             .then(r => r.text())
             .then(html => this.innerHTML = html);
     }
